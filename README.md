@@ -5,5 +5,5 @@ This is a project i started to learn making application in AndroidStudio i took 
 ![alt-text](https://github.com/MrPio/CookieClicker-replica-/blob/main/screenshots/Screenshot_20211126-205425.png)
 ![alt-text](https://github.com/MrPio/CookieClicker-replica-/blob/main/screenshots/Screenshot_20211126-205415.png)
 ![alt-text](https://github.com/MrPio/CookieClicker-replica-/blob/main/screenshots/Screenshot_20211126-205329.png)
-![alt-text](https://github.com/MrPio/CookieClicker-replica-/blob/main/screenshots/Screenshot_20211126-205309.png)
 ![alt-text](https://github.com/MrPio/CookieClicker-replica-/blob/main/screenshots/Screenshot_20211126-205257.png)
+![alt-text](https://github.com/MrPio/CookieClicker-replica-/blob/main/screenshots/Screenshot_20211126-205246.png)
