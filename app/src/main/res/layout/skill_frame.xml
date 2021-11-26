@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_menu"
+    android:layout_width="80dp"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/frame1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame100" />
+
+    <ImageView
+        android:id="@+id/frame2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/frame3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame1"
+        app:srcCompat="@drawable/frame101" />
+
+    <ImageView
+        android:id="@+id/frame3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/frame102" />
+
+    <ImageView
+        android:id="@+id/frame4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/frame3"
+        app:layout_constraintTop_toBottomOf="@+id/frame1"
+        app:srcCompat="@drawable/frame103" />
+
+    <ImageView
+        android:id="@+id/frame_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/frame3"
+        app:layout_constraintEnd_toStartOf="@+id/frame2"
+        app:layout_constraintStart_toStartOf="@+id/frame_skill"
+        app:layout_constraintTop_toTopOf="@+id/frame_skill"
+        app:srcCompat="@color/light_brown" />
+
+    <ImageView
+        android:id="@+id/frame_bg_gold"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frame4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/gold_light" />
+
+    <ImageView
+        android:id="@+id/frame_skill"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/frame3"
+        app:layout_constraintEnd_toStartOf="@+id/frame2"
+        app:layout_constraintStart_toEndOf="@+id/frame4"
+        app:layout_constraintTop_toBottomOf="@+id/frame1"
+        app:srcCompat="@drawable/skill000" />
+
+    <ImageView
+        android:id="@+id/frame_grey_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frame4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/three_dark_background" />
+
+    <ImageView
+        android:id="@+id/frame_light"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frame4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/light_background" />
+
+    <ImageView
+        android:id="@+id/frame_grey_skill"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_skill"
+        app:layout_constraintEnd_toEndOf="@+id/frame_skill"
+        app:layout_constraintStart_toStartOf="@+id/frame_skill"
+        app:layout_constraintTop_toTopOf="@+id/frame_skill"
+        app:srcCompat="@color/dark_dark_background" />
+
+</android.support.constraint.ConstraintLayout>

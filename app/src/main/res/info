@@ -1,0 +1,48 @@
+-------------------------------------
+VIEWs RANGE:
+
+    VIEWs:
+
+        NAME            RANGE       #
+
+        Buildings       0000~0499   1
+        Upgrade         0500~2499   3
+        Skill(ico)      2500~2599   2
+        Skill(menu)     2600~2699   4
+        Upgrade2        3000~3999   5
+
+    SPECIAL:
+
+        NAME            RANGE
+
+        N._to_show      999|00
+        N._to_show2     999|01
+        info_color      998|XX
+
+-------------------------------------
+
+TODO:
+    •CHECK 2815 3106
+    •SULLA POSIZIONE DEI NUOVI UPGRADE BISOGNA CONSIDERARE ANCHE IL NUMERO DEI PRECEDENTI, AD ESEMPIO SE CI SONO 2 GRANDMA E DEVO AGGIUNGERE UN FARM, NON LO DEVO METTERE AL PUNTO 1, MA 2 PERCHE CI SONO 2 GRANDMA E NON 1
+    •ANCHE DOPO IL RESET GLI UPGRADES DEI CURSORI NON SI FANNO VEDERE
+    •SE RESET NON SALVARE AL TERMINE DEL SERVICE
+
+    IMPORTATE!!:
+    ♦QUANDO COMPRO UN UPGRADE SENZA ABBASTANZA COOKIE DOPO AVERNE COMPRATI ALTRI ESSO SCALA GIU IN FONDO PER COLPA DEL SET TRANSITION 0
+    ♦GLI UPGRADES NON HANNO COLORE QUANDO GENERATI ALL'AVVIO
+
+
+
+
+
+dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
+
+//Show the dialog!
+dialog.show();
+
+//Set the dialog to immersive
+dialog.getWindow().getDecorView().setSystemUiVisibility(
+context.getWindow().getDecorView().getSystemUiVisibility());
+
+//Clear the not focusable flag from the window
+dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);

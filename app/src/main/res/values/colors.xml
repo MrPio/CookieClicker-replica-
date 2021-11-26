@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="grey">#2e2e2e</color>
+    <color name="darkdark_grey">#282828</color>
+    <color name="dark_background">#61000000</color>
+    <color name="white">#e3e3e3</color>
+    <color name="dark_dark_background">#79000000</color>
+    <color name="light_grey">#737373</color>
+    <color name="three_dark_background">#b9000000</color>
+    <color name="gold">#f9d42c</color>
+    <color name="orange">#fa9231</color>
+    <color name="green">#41c546</color>
+    <color name="light_brown">#d8ad7c</color>
+    <color name="light_background">#2dffffff</color>
+    <color name="gold_light">#27f9d11c</color>
+    <color name="green_light">#2a15d12b</color>
+    <color name="red">#C90A1B</color>
+    <color name="red_light">#C9272F</color>
+    <color name="light2_background">#1dffffff</color>
+    <color name="grandma">#3f51b5</color>
+    <color name="alchemy_lab">#f9d42c</color>
+    <color name="cursor">#3dca42</color>
+    <color name="farm">#eb7e2f</color>
+    <color name="mine">#623527</color>
+    <color name="factory">#c9272f</color>
+    <color name="bank">#2dbb91</color>
+    <color name="temple">#a58338</color>
+    <color name="wizard_tower">#703fd1</color>
+    <color name="shipment">#c9447b</color>
+    <color name="portal">#bd2124</color>
+    <color name="time_machine">#c5c09c</color>
+    <color name="antimatter_condenser">#784e4e</color>
+    <color name="prism">#378fce</color>
+    <color name="chancemaker">#51c630</color>
+    <color name="ultra_white">#ffffff</color>
+    <color name="ultra_white2">#54ffffff</color>
+    <color name="light_grey2">#a3a3a3</color>
+    <color name="dark_dark_half_background">#9a000000</color>
+    <color name="light_grey3">#c8c8c8</color>
+    <color name="darkdark_grey2">#111111</color>
+
+</resources>

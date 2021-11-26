@@ -1,0 +1,1 @@
+package mrpio.cookieclicker;/** * Created by Valerio on 15/07/2018. */class CurveInterpolator2 implements android.view.animation.Interpolator {    public float getInterpolation(float time) {        // return (float) ((Math.log(time)/Math.log(mAmplitude))/0.7f+1);        return ((float)(2*Math.pow((time),2))-time);    }}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="mrpio.cookieclicker">
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:theme="@style/full">
+        <activity
+            android:name="mrpio.cookieclicker.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="mrpio.cookieclicker.service"
+            android:exported="false" />
+
+        <!--<provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true"
+            android:authorities="mrpio.cookieclicker.com.android.tools.ir.server.InstantRunContentProvider" />-->
+    </application>
+
+</manifest>
+
+
+
+
+

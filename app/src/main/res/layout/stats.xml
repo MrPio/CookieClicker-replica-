@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stat_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_dark_background"
+    android:paddingEnd="36dp"
+    android:paddingStart="46dp">
+
+    <TextView
+        android:id="@+id/stat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Cookies in bank:"
+        android:textColor="@color/light_grey2"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/stat_cookie"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_name"
+        app:layout_constraintStart_toEndOf="@+id/stat_name"
+        app:layout_constraintTop_toTopOf="@+id/stat_name"
+        app:srcCompat="@drawable/very_small_cookie" />
+
+    <TextView
+        android:id="@+id/stat_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/carter_one"
+        android:text="no value"
+        android:textColor="@color/ultra_white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stat_cookie"
+        app:layout_constraintTop_toTopOf="@+id/stat_name" />
+</android.support.constraint.ConstraintLayout>

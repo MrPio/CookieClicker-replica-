@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/palette_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/palette"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/bar_hoverhi"
+        android:scaleType="fitXY"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/number_of"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:fontFamily="cursive"
+        android:text="1"
+        android:textAlignment="textEnd"
+        android:textColor="@color/grey"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/palette"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/palette" />
+
+    <TextView
+        android:id="@+id/cost_of"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="2dp"
+        android:fontFamily="cursive"
+        android:text="15"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/palette"
+        app:layout_constraintEnd_toStartOf="@+id/number_of"
+        app:layout_constraintStart_toEndOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/palette"
+        app:layout_constraintStart_toEndOf="@+id/symbol"
+        app:srcCompat="@drawable/very_small_cookie" />
+
+    <ImageView
+        android:id="@+id/build_name"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="14dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cursor_text" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/info_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/grey"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/palette"
+        app:layout_constraintEnd_toEndOf="@+id/palette"
+        app:layout_constraintStart_toStartOf="@+id/symbol"
+        app:layout_constraintTop_toTopOf="@+id/palette">
+
+        <ImageView
+            android:id="@+id/color_bg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@color/portal" />
+
+        <ImageView
+            android:id="@+id/symbol2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/cursor" />
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/carter_one"
+            android:text="Cursor"
+            android:textAlignment="textEnd"
+            android:textColor="@color/darkdark_grey2"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/symbol2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.009" />
+
+        <TextView
+            android:id="@+id/info_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/carter_one"
+            android:text="0.00%"
+            android:textAlignment="textEnd"
+            android:textColor="@color/light_grey3"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/info_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/info_bottom2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/carter_one"
+            android:text="cps"
+            android:textColor="@color/light_grey2"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/info_bg"
+            app:layout_constraintStart_toEndOf="@+id/info_bottom" />
+
+        <TextView
+            android:id="@+id/info_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/carter_one"
+            android:text="0"
+            android:textColor="@color/light_grey"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/info_bg"
+            app:layout_constraintStart_toEndOf="@+id/symbol2" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/symbol"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/palette"
+        app:layout_constraintStart_toStartOf="@+id/palette"
+        app:srcCompat="@drawable/cursor" />
+
+</android.support.constraint.ConstraintLayout>
